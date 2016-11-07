@@ -1,11 +1,16 @@
 import React from 'react';
+import Lists from '../components/Lists'
 
-const App = ({ children }) => (
-  <div>
-    Hello World
-    { children }
-  </div>
-)
+class App extends React.Component {
+  render() {
+    return(
+      <div>
+        hello world
+        <Lists />
+      </div>
+    )
+  }
+
+}
 
 export default App;
-
