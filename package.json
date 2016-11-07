@@ -1,6 +1,6 @@
 {
   "name": "repack",
-  "version": "0.0.1",
+  "version": "v0.16.1",
   "license": "MIT",
   "scripts": {
     "dev_server": "./node_modules/.bin/webpack-dev-server --config config/webpack.config.js",
