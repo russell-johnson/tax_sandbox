@@ -1,28 +1,29 @@
 import React from 'react';
-import { connect } from 'react-redux'
-import { indexLists } from '../actions/actions';
 
 class Lists extends React.Component {
-  constructor() {
-    super();
-    this.indexLists = this.indexLists.bind(this);
-  }
 
-  indexLists() {
-    this.props.dispatch(indexLists())
+  displayLists(list) {
+    console.log(list)
+    return (
+      <div>
+        <p></p>
+      </div>
+    )
   }
 
   componentWillMount() {
-    this.indexLists()
+    this.props.indexLists()
   }
 
   render() {
     return(
       <div>
-        hellllo
+        {console.log("render LIst compo")}
+        hello
+        {this.props.lists.map(this.displayLists)}
       </div>
     )
   }
 }
 
-export default connect()(Lists);
+export default Lists;

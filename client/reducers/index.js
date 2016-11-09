@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
-import list from './lists'
+import { routerReducer as routing } from 'react-router-redux';
+import lists from './lists'
+import robots from './robots'
 
 const rootReducer = combineReducers({
-  routing: routerReducer,
-  list: list
+  routing,
+  lists,
+  robots
  });
 
 export default rootReducer;

@@ -1,4 +1,4 @@
-export const indexLists = () => {
+export const indexLists = (dispatch) => {
   return (dispatch) => {
     $.ajax({
       url: '/api/lists/all',
@@ -10,6 +10,8 @@ export const indexLists = () => {
   }
 }
 
-const allLists = (lists) => {
-  return { ...lists, type: 'LISTS'}
+function allLists(lists) {
+  console.log(lists)
+  console.log("return of action")
+  return { type: 'LISTS', lists }
 }

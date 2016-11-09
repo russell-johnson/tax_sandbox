@@ -1,13 +1,16 @@
-const list = (state = {}, action) => {
+const lists = (state = [], action) => {
+  console.log(state)
+  console.log(action.type);
   switch(action.type) {
-    case 'LIST':
-      let { id, name } = action
-      return { id, name }
     case 'LISTS':
-      return state
+      console.log(action.lists)
+      console.log("in reducer")
+      return [...state,{
+        lists: action.lists
+      }];
     default:
       return state
   }
 }
 
-export default list;
+export default lists;
