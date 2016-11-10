@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  root 'lists#index'
+  root 'homes#index'
 
   namespace :api do
-    get '/list/:id', to: 'lists#show'
-    get '/lists/all', to: 'lists#all'
+    resources :lists do
+      resources :items
+    end
     resources :robots
+    resources :shamwows
   end
 
-  get  '*unmatched_route', to: 'lists#index'
+  get  '*unmatched_route', to: 'homes#index'
 end
