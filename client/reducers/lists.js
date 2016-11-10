@@ -1,13 +1,12 @@
 const lists = (state = [], action) => {
-  console.log(state)
-  console.log(action.type);
   switch(action.type) {
     case 'LISTS':
-      console.log(action.lists)
-      console.log("in reducer")
-      return [...state,{
-        lists: action.lists
-      }];
+      return action.lists;
+    case 'LIST':
+      return {
+        id: action.list.id,
+        name: action.list.name
+        }
     default:
       return state
   }

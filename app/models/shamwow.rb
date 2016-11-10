@@ -1,0 +1,2 @@
+class Shamwow < ApplicationRecord
+end
