@@ -1,0 +1,2 @@
+class DatBoi < ApplicationRecord
+end

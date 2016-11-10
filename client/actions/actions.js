@@ -11,7 +11,5 @@ export const indexLists = (dispatch) => {
 }
 
 function allLists(lists) {
-  console.log(lists)
-  console.log("return of action")
   return { type: 'LISTS', lists }
 }
