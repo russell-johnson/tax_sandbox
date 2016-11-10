@@ -44,4 +44,11 @@ ActiveRecord::Schema.define(version: 20161110232100) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "shamwows", force: :cascade do |t|
+    t.integer  "size"
+    t.string   "color"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
