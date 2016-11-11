@@ -17,7 +17,7 @@ export const showList = (id) => {
       type: 'GET',
       dataType: 'JSON'
     }).done( (list) => {
-      dispatch( {type: 'LIST', list} );
+      dispatch( {type: 'LIST', ...list} );
     })
   }
 }

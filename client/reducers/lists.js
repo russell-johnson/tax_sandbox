@@ -4,8 +4,8 @@ const lists = (state = [], action) => {
       return action.lists;
     case 'LIST':
       return {
-        id: action.list.id,
-        name: action.list.name
+        id: action.id,
+        name: action.name
         }
     default:
       return state

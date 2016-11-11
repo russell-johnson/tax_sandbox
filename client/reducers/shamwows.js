@@ -10,9 +10,9 @@ const shamwows = (state = [], action) => {
         ]
     case 'GET_SHAMWOW':
       return {
-        id: action.shamwow.id,
-        size: action.shamwow.size,
-        color: action.shamwow.color
+        id: action.id,
+        size: action.size,
+        color: action.color
       }
     default:
       return state

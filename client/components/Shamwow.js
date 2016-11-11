@@ -15,7 +15,7 @@ class Shamwow extends React.Component {
   render() {
     return(
       <div>
-        YUR SHAMMY SHAMWOW
+        {this.props.shamwow.size}, {this.props.shamwow.color}
       </div>
     )
   }
