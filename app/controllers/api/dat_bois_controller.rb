@@ -1,5 +1,4 @@
-class API::DatBoisController < ApplicationController
-
+class Api::DatBoisController < ApplicationController
   def index
     render json: DatBoi.all
   end
@@ -17,4 +16,5 @@ class API::DatBoisController < ApplicationController
   def dat_boi_params
     params.require(:dat_boi).permit(:name, :catch_phrase)
   end
+
 end

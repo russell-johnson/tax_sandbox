@@ -7,7 +7,8 @@ Rails.application.routes.draw do
     end
     resources :robots
     resources :shamwows
+    resources :dat_bois
   end
 
-  get  '*unmatched_route', to: 'homes#index'
+  get '*unmatched_route', to: 'homes#index'
 end

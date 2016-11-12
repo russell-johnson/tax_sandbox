@@ -4,18 +4,9 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
 class Lists extends React.Component {
-<<<<<<< HEAD
 
-  displayLists(list) {
-    return (
-      <div>
-        <p></p>
-      </div>
-    )
-=======
   constructor(props) {
     super(props);
->>>>>>> 6b1d26b00b2469ed86ec07bd8f326a381fa3dca4
   }
 
   componentWillMount() {
@@ -30,15 +21,10 @@ class Lists extends React.Component {
     })
     return(
       <div>
-<<<<<<< HEAD
-        hello
-        {this.props.lists.map(this.displayLists)}
-=======
         Lists
         <div>
           {lists}
         </div>
->>>>>>> 6b1d26b00b2469ed86ec07bd8f326a381fa3dca4
       </div>
     )
   }
